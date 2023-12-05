@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS (for icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 56px; /* Adjust the top padding to accommodate the fixed navbar */
+    }
+
+    .dashboard-icon {
+      font-size: 3em;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .dashboard-icon:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="t.gif" alt="Your Logo" width="150" height="40" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard Content -->
+  <div class="container mt-4 text-center">
+
+    <!-- Icon Grid -->
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-user-circle dashboard-icon" onclick="goToProfile()"></i>
+        <p class="mt-2">Profile</p>
+        <p class="card-text">View and update your profile.</p>
+      </div>
+
+      <div class="col-md-4">
+        <i class="fas fa-code dashboard-icon" onclick="goToSkills()"></i>
+        <p class="mt-2">Skills</p>
+        <p class="card-text">Add and update your skills.</p>
+      </div>
+
+      <div class="col-md-4">
+        <i class="fas fa-users dashboard-icon" onclick="goToPeerValidation()"></i>
+        <p class="mt-2">Peer Validation</p>
+        <p class="card-text">Specify projects you worked on with peers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome JS (for icons) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <!-- Custom Script for Clickable Icons -->
+  <script>
+    function goToProfile() {
+      // Add logic to navigate to the profile page
+      console.log('Navigating to Profile');
+    }
+
+    function goToSkills() {
+      // Add logic to navigate to the skills page
+      console.log('Navigating to Skills');
+      window.location.href = 'skills.html';
+    }
+
+    function goToPeerValidation() {
+      // Add logic to navigate to the peer validation page
+      console.log('Navigating to Peer Validation');
+      window.location.href = 'peer.html'
+    }
+  </script>
+</body>
+</html>
+
